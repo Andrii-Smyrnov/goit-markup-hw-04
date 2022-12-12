@@ -27,6 +27,7 @@
     --color-contacts-footer: #ffffff99;
     --color-map-email-phone-hover-focus: #2196f3;
     --color-items: #AFB1B8;
+    --color-footer-social: #ffffff1a;
     --main-text-color: #757575;
     --main-text-color-second: #FFFFFF;
 
@@ -445,9 +446,48 @@ img {
 
 .position {
     text-align: center;
+    margin-bottom: 16px;
 }
 
+.social-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
 
+.social-item {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+}
+
+.social-link,
+.social-link-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    color: var(--color-items);
+}
+
+.logo-media {
+    fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus,
+.social-link-footer:hover,
+.social-link-footer:focus {
+    color: var(--background-color-body);
+    background-color: var(--background-color-hero-button);
+
+}
 
 .clients-section {
     background-color: var(--background-color-body);
@@ -590,6 +630,55 @@ img {
   
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.link-portfolio  {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.link-portfolio:hover,
+.link-portfolio:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .portfolio-projects {
 
     font-weight: 700;
@@ -623,7 +712,7 @@ img {
 
 .logo-footer {
     display: block;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 
 .address-list-footer {
@@ -665,3 +754,30 @@ img {
 .source {
     margin-bottom: 12px;
 }
+
+.footer-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: left;
+    
+    color: var(--background-color-body);
+
+    margin-bottom: 27px;
+   
+   
+}
+
+.social-link-footer {
+    color: var(--background-color-body);
+    background-color: var(--color-footer-social);
+}
+
+.footer-box {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+}
+
