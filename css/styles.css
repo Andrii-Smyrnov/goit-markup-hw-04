@@ -202,14 +202,20 @@ img {
 
 .header-mail,
 .header-phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
     color: var(--main-text-color);
-
     text-decoration: none;
 
     padding-top: 32px;
     padding-bottom: 32px;
-    
+}
 
+.envelope,
+.smartphone {
+    fill: currentColor;
 }
 
 .header-mail:hover,
@@ -237,14 +243,17 @@ img {
 
 .hero-section {
 
-    background-color: var(--background-color-second);
-    background-image: url("../images/Img-hero-background.jpg");
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
     max-width: 1600px;
+    min-height: 600px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
 
+    background-color: var(--background-color-second);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),
+    url("../images/Img-hero-background.jpg");
+    
 
     padding-top: 200px;
     padding-bottom: 200px;
