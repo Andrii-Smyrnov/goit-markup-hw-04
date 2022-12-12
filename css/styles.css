@@ -8,6 +8,7 @@
     --background-color-hero-button: #2196F3;
     --background-colors-filter-button: #F5F4FA;
     --background-colors-filter-button-hover-focus-active: #2196F3;
+    --background-color-benefits-card: #f5f4fa;
     --color-header-border-bottom: #ECECEC;
     --color-portfolio-card-border: #EEEEEE;
     --color-text-button-hero: #FFFFFF;
@@ -205,7 +206,7 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
-    
+
     color: var(--main-text-color);
     text-decoration: none;
 
@@ -328,17 +329,27 @@ img {
 
 .benefits-list {
     display: flex;
+    gap: 30px;
+    
 }
 
 .benefits-list-item {
-    margin-right: 30px;
+    width: 270px;
+    
 }
 
-.benefits-list-item:last-child {
-    margin-right: 0px;
+.benefits-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--background-color-benefits-card);
+
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    
 }
-
-
 
 .heading-benefits{
 
@@ -356,9 +367,7 @@ img {
     font-size: 14px;
     line-height: 1.7em;
     letter-spacing: 0.03em;
-    width: 270px;
-
-    
+     
 }
 
 .what-we-do-section {
